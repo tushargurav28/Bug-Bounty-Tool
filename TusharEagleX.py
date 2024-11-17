@@ -42,31 +42,25 @@ try:
         try:
             if selection == '1':
                 clear_screen()
-                os.system("python3 tool/lfi.py")
+                lfi.run_lfi_scanner()
+                # os.system("python3 tool/lfi.py")
 
             elif selection == '2':
                 clear_screen()
-                os.system("python3 tool/or.py")
+                open_redirection.openredirect()
+                # os.system("python3 tool/or.py")
 
             elif selection == '3':
                 clear_screen()
-
-                os.system("python3 tool/sqli.py")
+                sqli.sqli()
+                # os.system("python3 tool/sqli.py")
 
             elif selection == '4':
                 clear_screen()
-                os.system("python3 tool/xss.py")
+                xss.run_xss_scanner()
+                # os.system("python3 tool/xss.py")
 
             elif selection == '5':
-                clear_screen()
-                os.system("python3 tool/crlf.py")
-
-            elif selection == '6':
-                clear_screen()
-                run_update()
-                clear_screen()
-
-            elif selection == '7':
                 clear_screen()
                 sys.exit(0)
 
