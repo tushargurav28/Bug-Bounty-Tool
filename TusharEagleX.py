@@ -20,7 +20,12 @@ try:
 
 
     def display_menu():
-        print("hello")
+        print("1)  Local File Inclusion ")
+        print("2)  Open Redirection ")
+        print("3)  SQL injection Vulnerability ")
+        print("4)  Cross Site Scripting Vulnerability ")
+        print("5)  Exit ")
+        print("6)  Exit  ")
 
     def print_exit_menu():
         clear_screen()
@@ -43,22 +48,18 @@ try:
             if selection == '1':
                 clear_screen()
                 lfi.run_lfi_scanner()
-                # os.system("python3 tool/lfi.py")
 
             elif selection == '2':
                 clear_screen()
                 open_redirection.openredirect()
-                # os.system("python3 tool/or.py")
 
             elif selection == '3':
                 clear_screen()
                 sqli.sqli()
-                # os.system("python3 tool/sqli.py")
 
             elif selection == '4':
                 clear_screen()
                 xss.run_xss_scanner()
-                # os.system("python3 tool/xss.py")
 
             elif selection == '5':
                 clear_screen()
