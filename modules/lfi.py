@@ -19,6 +19,7 @@ from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 from rich import print as rich_print
 
+# from modules import report
 from .report import USER_AGENTS, generate_html_report, save_html_report
 
 
